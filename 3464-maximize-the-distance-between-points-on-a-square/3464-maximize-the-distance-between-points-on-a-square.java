@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
 
     public int maxDistance(int side, int[][] points, int k) {
@@ -6,68 +8,74 @@ class Solution {
         for (int[] p : points) {
             int x = p[0];
             int y = p[1];
+
             if (x == 0) {
                 arr.add((long) y);
             } else if (y == side) {
                 arr.add((long) side + x);
             } else if (x == side) {
-                arr.add(side * 3L - y);
+                arr.add(3L * side - y);
             } else {
-                arr.add(side * 4L - x);
+                arr.add(4L * side - x);
             }
         }
+
         Collections.sort(arr);
 
-        long lo = 1;
-        long hi = side;
+        long low = 1, high = side;
         int ans = 0;
 
-        while (lo <= hi) {
-            long mid = (lo + hi) / 2;
+        while (low <= high) {
+            long mid = (low + high) / 2;
+
             if (check(arr, side, k, mid)) {
-                lo = mid + 1;
                 ans = (int) mid;
+                low = mid + 1;
             } else {
-                hi = mid - 1;
+                high = mid - 1;
             }
         }
+
         return ans;
     }
 
-    private boolean check(List<Long> arr, int side, int k, long limit) {
-        long perimeter = side * 4L;
+    private boolean check(List<Long> arr, int side, int k, long dist) {
+        long perimeter = 4L * side;
 
         for (long start : arr) {
-            long end = start + perimeter - limit;
+            long end = start + perimeter - dist;
             long cur = start;
 
             for (int i = 0; i < k - 1; i++) {
-                int idx = lowerBound(arr, cur + limit);
+                int idx = lowerBound(arr, cur + dist);
+
                 if (idx == arr.size() || arr.get(idx) > end) {
                     cur = -1;
                     break;
                 }
+
                 cur = arr.get(idx);
             }
 
-            if (cur >= 0) {
-                return true;
-            }
+            if (cur != -1) return true;
         }
+
         return false;
     }
 
     private int lowerBound(List<Long> arr, long target) {
-        int left = 0;
-        int right = arr.size();
+        int left = 0, right = arr.size();
+
         while (left < right) {
             int mid = left + (right - left) / 2;
+
             if (arr.get(mid) < target) {
                 left = mid + 1;
             } else {
                 right = mid;
             }
         }
+
         return left;
     }
 }
