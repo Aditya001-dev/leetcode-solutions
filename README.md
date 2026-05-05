@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0061-rotate-list](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0061-rotate-list) |
 ## Recursion
 |  |
 | ------- |
@@ -91,4 +92,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0796-rotate-string](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0796-rotate-string) |
+## Two Pointers
+|  |
+| ------- |
+| [0061-rotate-list](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0061-rotate-list) |
 <!---LeetCode Topics End-->
