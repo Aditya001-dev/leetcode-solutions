@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0001-two-sum) |
+| [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Binary Search
 |  |
@@ -63,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0002-add-two-numbers) |
 | [0009-palindrome-number](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0009-palindrome-number) |
+| [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0048-rotate-image) |
 | [0788-rotated-digits](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0788-rotated-digits) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -102,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0796-rotate-string](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0796-rotate-string) |
 ## String Matching
 |  |
