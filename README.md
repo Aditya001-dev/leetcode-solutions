@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0004-median-of-two-sorted-arrays](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0048-rotate-image](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0048-rotate-image) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1861-rotating-the-box](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1861-rotating-the-box) |
 | [1914-cyclically-rotating-a-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1914-cyclically-rotating-a-grid) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 ## Geometry
@@ -119,4 +121,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1914-cyclically-rotating-a-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1914-cyclically-rotating-a-grid) |
 | [2553-separate-the-digits-in-an-array](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2553-separate-the-digits-in-an-array) |
+## Greedy
+|  |
+| ------- |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 <!---LeetCode Topics End-->
