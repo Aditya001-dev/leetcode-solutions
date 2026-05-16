@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0004-median-of-two-sorted-arrays](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0048-rotate-image](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0048-rotate-image) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1674-minimum-moves-to-make-array-complementary) |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 ## Divide and Conquer
 |  |
