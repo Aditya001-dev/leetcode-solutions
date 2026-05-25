@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0788-rotated-digits](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0788-rotated-digits) |
 | [1340-jump-game-v](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1340-jump-game-v) |
+| [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [3225-maximum-score-from-grid-operations](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3225-maximum-score-from-grid-operations) |
 | [3660-jump-game-ix](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3660-jump-game-ix) |
@@ -120,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1674-minimum-moves-to-make-array-complementary) |
+| [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
 | [3225-maximum-score-from-grid-operations](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3225-maximum-score-from-grid-operations) |
 ## Linked List
 |  |
@@ -135,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0796-rotate-string](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0796-rotate-string) |
+| [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 ## String Matching
 |  |
@@ -167,4 +170,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
+## Sliding Window
+|  |
+| ------- |
+| [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
 <!---LeetCode Topics End-->
