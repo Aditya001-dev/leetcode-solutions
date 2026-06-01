@@ -121,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
 | [0788-rotated-digits](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0788-rotated-digits) |
 | [1340-jump-game-v](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1340-jump-game-v) |
 | [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
@@ -143,9 +144,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
 ## String
 |  |
 | ------- |
+| [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
 | [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0796-rotate-string](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0796-rotate-string) |
 | [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
