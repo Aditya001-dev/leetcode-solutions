@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0001-two-sum) |
+| [0003-longest-substring-without-repeating-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [1345-jump-game-iv](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1345-jump-game-iv) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1674-minimum-moves-to-make-array-complementary) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
 | [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0796-rotate-string](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0796-rotate-string) |
@@ -214,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
 ## Binary Indexed Tree
 |  |
