@@ -134,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
 | [0788-rotated-digits](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0788-rotated-digits) |
 | [1340-jump-game-v](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1340-jump-game-v) |
@@ -165,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
 | [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0796-rotate-string](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0796-rotate-string) |
@@ -180,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0061-rotate-list](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0061-rotate-list) |
 | [1861-rotating-the-box](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1861-rotating-the-box) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2161-partition-array-according-to-given-pivot) |
