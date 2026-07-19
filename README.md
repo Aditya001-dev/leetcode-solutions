@@ -261,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0014-longest-common-prefix) |
 | [0796-rotate-string](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0796-rotate-string) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1189-maximum-number-of-balloons](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1871-jump-game-vii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1871-jump-game-vii) |
@@ -315,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0011-container-with-most-water) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1833-maximum-ice-cream-bars](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [2126-destroying-asteroids](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2126-destroying-asteroids) |
@@ -376,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Counting Sort
 |  |
@@ -411,4 +414,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3312-sorted-gcd-pair-queries](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/3312-sorted-gcd-pair-queries) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 <!---LeetCode Topics End-->
