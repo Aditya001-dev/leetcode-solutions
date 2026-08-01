@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0048-rotate-image) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
+| [0486-predict-the-winner](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0628-maximum-product-of-three-numbers) |
 | [1260-shift-2d-grid](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1288-remove-covered-intervals) |
@@ -176,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0012-integer-to-roman](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0048-rotate-image) |
+| [0486-predict-the-winner](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0628-maximum-product-of-three-numbers) |
 | [0788-rotated-digits](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0788-rotated-digits) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1344-angle-between-hands-of-a-clock) |
@@ -235,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
+| [0486-predict-the-winner](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0486-predict-the-winner) |
 | [0788-rotated-digits](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0788-rotated-digits) |
 | [1301-number-of-paths-with-max-score](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1340-jump-game-v](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/1340-jump-game-v) |
@@ -278,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0002-add-two-numbers) |
 | [0010-regular-expression-matching](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0010-regular-expression-matching) |
 | [0021-merge-two-sorted-lists](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0021-merge-two-sorted-lists) |
+| [0486-predict-the-winner](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0486-predict-the-winner) |
 ## String
 |  |
 | ------- |
@@ -476,4 +480,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
+## Game Theory
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/Aditya001-dev/leetcode-solutions/tree/master/0486-predict-the-winner) |
 <!---LeetCode Topics End-->
