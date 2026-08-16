@@ -1,0 +1,13 @@
+class Solution:
+    def stoneGameIX(self, stones: list[int]) -> bool:
+        # Count the occurrences of each remainder modulo 3
+        count = [0, 0, 0]
+        for stone in stones:
+            count[stone % 3] += 1
+            
+        # Case 1: Even number of remainder 0 stones
+        if count[0] % 2 == 0:
+            return min(count[1], count[2]) > 0
+        
+        # Case 2: Odd number of remainder 0 stones
+        return abs(count[1] - count[2]) > 2
