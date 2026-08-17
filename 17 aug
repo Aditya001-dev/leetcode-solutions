@@ -1,0 +1,53 @@
+#include <vector>
+#include <numeric>
+#include <algorithm>
+
+class Solution {
+public:
+    int stoneGameV(std::vector<int>& stoneValue) {
+        int n = stoneValue.size();
+        
+        // Prefix sum array for fast range sum queries
+        std::vector<int> pref(n + 1, 0);
+        for (int i = 0; i < n; ++i) {
+            pref[i + 1] = pref[i] + stoneValue[i];
+        }
+        
+        auto get_sum = [&](int i, int j) {
+            return pref[j + 1] - pref[i];
+        };
+
+        // dp[i][j] stores the max score for subarray from i to j
+        std::vector<std::vector<int>> dp(n, std::vector<int>(n, 0));
+
+        // Iterate by length of the subarray
+        for (int length = 2; length <= n; ++length) {
+            for (int i = 0; i <= n - length; ++i) {
+                int j = i + length - 1;
+                int max_score = 0;
+                
+                for (int k = i; k < j; ++k) {
+                    int left_sum = get_sum(i, k);
+                    int right_sum = get_sum(k + 1, j);
+                    int score = 0;
+                    
+                    if (left_sum < right_sum) {
+                        score = left_sum + dp[i][k];
+                    } else if (left_sum > right_sum) {
+                        score = right_sum + dp[k + 1][j];
+                    } else {
+                        score = std::max(left_sum + dp[i][k], right_sum + dp[k + 1][j]);
+                    }
+                    
+                    if (score > max_score) {
+                        max_score = score;
+                    }
+                }
+                
+                dp[i][j] = max_score;
+            }
+        }
+        
+        return dp[0][n - 1];
+    }
+};
