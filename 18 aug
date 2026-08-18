@@ -1,0 +1,21 @@
+from collections import defaultdict
+
+class Solution:
+    def largestInteger(self, nums: list[int], k: int) -> int:
+        count_subarrays = defaultdict(int)
+        
+        # Iterate through all possible starting indices for subarrays of size k
+        for i in range(len(nums) - k + 1):
+            subarray = nums[i:i + k]
+            # Use a set to count each unique number only once per subarray
+            for num in set(subarray):
+                count_subarrays[num] += 1
+                
+        # Find the largest integer that appears in exactly one subarray
+        max_almost_missing = -1
+        for num, count in count_subarrays.items():
+            if count == 1:
+                if num > max_almost_missing:
+                    max_almost_missing = num
+                    
+        return max_almost_missing
