@@ -1,0 +1,25 @@
+from collections import defaultdict
+
+class Solution:
+    def maxNumberOfFamilies(self, n, reservedSeats):
+        # Group reserved seats by their row
+        row_reservations = defaultdict(set)
+        for r, s in reservedSeats:
+            row_reservations[r].add(s)
+        
+        # Every unreserved row can seat a maximum of 2 groups
+        total_groups = (n - len(row_reservations)) * 2
+        
+        # Check each row that has at least one reservation
+        for r, seats in row_reservations.items():
+            # Check availability of the three blocks
+            left = not any(s in seats for s in [2, 3, 4, 5])
+            middle = not any(s in seats for s in [4, 5, 6, 7])
+            right = not any(s in seats for s in [6, 7, 8, 9])
+            
+            if left and right:
+                total_groups += 2
+            elif left or middle or right:
+                total_groups += 1
+                
+        return total_groups
