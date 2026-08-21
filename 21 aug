@@ -1,0 +1,76 @@
+#include <vector>
+#include <numeric>
+#include <algorithm>
+#include <climits>
+
+class Solution {
+private:
+    // Helper function to compute Greatest Common Divisor
+    long long gcd(long long a, long long b) {
+        return std::__gcd(a, b);
+    }
+
+    // Helper function to compute Least Common Multiple safely
+    long long lcm(long long a, long long b) {
+        if (a == 0 || b == 0) return 0;
+        // Prevent potential overflow by dividing first
+        return (a / gcd(a, b)) * b;
+    }
+
+public:
+    long long findKthSmallest(std::vector<int>& coins, int k) {
+        int n = coins.size();
+        
+        // Store all non-empty subsets: pair of {LCM, subset_size}
+        std::vector<std::pair<long long, int>> subsets;
+        int total_subsets = (1 << n) - 1;
+        subsets.reserve(total_subsets);
+
+        for (int i = 1; i <= total_subsets; ++i) {
+            long long current_lcm = 1;
+            int set_size = 0;
+            bool overflow = false;
+
+            for (int j = 0; j < n; ++j) {
+                if ((i >> j) & 1) {
+                    set_size++;
+                    current_lcm = lcm(current_lcm, coins[j]);
+                    // If LCM exceeds the maximum possible answer, we can cap it or let it grow.
+                    // Given constraints, standard long long is enough.
+                }
+            }
+            subsets.push_back({current_lcm, set_size});
+        }
+
+        // Lambda function to count how many unique amounts <= mid can be made
+        auto count = [&](long long mid) -> long long {
+            long long total = 0;
+            for (const auto& [lcm_val, size] : subsets) {
+                if (size % 2 == 1) {
+                    total += mid / lcm_val;
+                } else {
+                    total -= mid / lcm_val;
+                }
+            }
+            return total;
+        };
+
+        // Binary search bounds
+        long long low = 1;
+        long long min_coin = *std::min_element(coins.begin(), coins.end());
+        long long high = min_coin * (long long)k;
+        long long ans = high;
+
+        while (low <= high) {
+            long long mid = low + (high - low) / 2;
+            if (count(mid) >= k) {
+                ans = mid;
+                high = mid - 1; // Try to find a smaller valid amount
+            } else {
+                low = mid + 1;  // Need a larger amount
+            }
+        }
+
+        return ans;
+    }
+};
