@@ -1,0 +1,37 @@
+#include <string>
+
+class Solution {
+public:
+    bool sumGame(std::string num) {
+        int n = num.size();
+        int lsum = 0, rsum = 0;
+        int lque = 0, rque = 0;
+        
+        // 1. Calculate sum and '?' count for the first half
+        for (int i = 0; i < n / 2; ++i) {
+            if (num[i] == '?') {
+                lque++;
+            } else {
+                lsum += num[i] - '0';
+            }
+        }
+        
+        // 2. Calculate sum and '?' count for the second half
+        for (int i = n / 2; i < n; ++i) {
+            if (num[i] == '?') {
+                rque++;
+            } else {
+                rsum += num[i] - '0';
+            }
+        }
+        
+        // 3. If the total number of '?' is odd, Alice gets the last move and wins.
+        if ((lque + rque) % 2 != 0) {
+            return true;
+        }
+        
+        // 4. Check if Bob can balance the sums symmetrically.
+        // Bob wins if (rque - lque) * 9 == (lsum - rsum) * 2
+        return (rque - lque) * 9 != (lsum - rsum) * 2;
+    }
+};
