@@ -1,0 +1,55 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+
+class Solution {
+public:
+    std::string lexGreaterPermutation(std::string s, std::string target) {
+        int n = s.length();
+        std::vector<int> initial_count(26, 0);
+        for (char ch : s) {
+            initial_count[ch - 'a']++;
+        }
+        
+        // Try the divergence point k from n - 1 down to 0
+        for (int k = n - 1; k >= 0; --k) {
+            std::vector<int> count = initial_count;
+            bool possible = true;
+            std::string prefix = "";
+            
+            // Try to match target[0 ... k-1]
+            for (int i = 0; i < k; ++i) {
+                int idx = target[i] - 'a';
+                if (count[idx] > 0) {
+                    count[idx]--;
+                    prefix += target[i];
+                } else {
+                    possible = false;
+                    break;
+                }
+            }
+            
+            if (!possible) continue;
+            
+            // At index k, try to pick a character strictly greater than target[k]
+            int start_char = target[k] - 'a' + 1;
+            for (int c_code = start_char; c_code < 26; ++c_code) {
+                if (count[c_code] > 0) {
+                    count[c_code]--;
+                    prefix += (char)('a' + c_code);
+                    
+                    // Greedily fill the remaining positions with the smallest available characters
+                    std::string rest = "";
+                    for (int code = 0; code < 26; ++code) {
+                        rest.append(count[code], (char)('a' + code));
+                    }
+                    
+                    return prefix + rest;
+                }
+            }
+        }
+        
+        // If no valid permutation greater than target can be formed, return ""
+        return "";
+    }
+};
