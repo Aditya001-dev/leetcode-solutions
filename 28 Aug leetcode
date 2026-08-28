@@ -1,0 +1,92 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+class Solution {
+public:
+    string lexPalindromicPermutation(string s, string target) {
+        int n = s.length();
+        vector<int> f(26, 0);
+        for (char c : s) {
+            f[c - 'a']++;
+        }
+        
+        int odds = 0;
+        int mid = -1;
+        for (int i = 0; i < 26; ++i) {
+            if (f[i] % 2 != 0) {
+                odds++;
+                mid = i;
+            }
+            f[i] /= 2;
+        }
+        
+        // A palindrome permutation is impossible if more than one character has an odd frequency
+        if (odds > 1) return "";
+        
+        int half = n / 2;
+        vector<int> freq_half = f;
+        string ans_left(half, ' ');
+        
+        auto build_full = [&](const string& l) {
+            string res = l;
+            if (n % 2 != 0) {
+                res += (char)('a' + mid);
+            }
+            string rev_l = l;
+            reverse(rev_l.begin(), rev_l.end());
+            res += rev_l;
+            return res;
+        };
+        
+        int pos = 0;
+        // Greedily match target's prefix
+        while (pos < half) {
+            int ch = target[pos] - 'a';
+            if (freq_half[ch] == 0) {
+                break;
+            }
+            ans_left[pos] = target[pos];
+            freq_half[ch]--;
+            pos++;
+        }
+        
+        if (pos == half) {
+            string full = build_full(ans_left);
+            if (full > target) return full;
+        }
+        
+        // Backtracking / finding the next valid greater permutation
+        while (true) {
+            if (pos < half) {
+                int min_ch = (pos < target.length() ? target[pos] - 'a' + 1 : 0);
+                int next_c = -1;
+                for (int ch = min_ch; ch < 26; ++ch) {
+                    if (freq_half[ch] > 0) {
+                        next_c = ch;
+                        break;
+                    }
+                }
+                if (next_c != -1) {
+                    ans_left[pos] = 'a' + next_c;
+                    freq_half[next_c]--;
+                    int dst = pos + 1;
+                    // Fill the rest with the smallest available characters
+                    for (int ch = 0; ch < 26; ++ch) {
+                        for (int k = 0; k < freq_half[ch]; ++k) {
+                            ans_left[dst++] = 'a' + ch;
+                        }
+                    }
+                    return build_full(ans_left);
+                }
+            }
+            if (pos == 0) {
+                return "";
+            }
+            pos--;
+            freq_half[target[pos] - 'a']++;
+        }
+    }
+};
