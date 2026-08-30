@@ -1,0 +1,28 @@
+#include <vector>
+#include <algorithm>
+
+class Solution {
+public:
+    int minimumDeletions(std::vector<int>& nums) {
+        int n = nums.size();
+        
+        // Find the iterators for the minimum and maximum elements
+        auto min_it = std::min_element(nums.begin(), nums.end());
+        auto max_it = std::max_element(nums.begin(), nums.end());
+        
+        // Get their respective indices
+        int min_idx = std::distance(nums.begin(), min_it);
+        int max_idx = std::distance(nums.begin(), max_it);
+        
+        // Ensure 'a' is the smaller index and 'b' is the larger index
+        int a = std::min(min_idx, max_idx);
+        int b = std::max(min_idx, max_idx);
+        
+        // Three possible deletion strategies
+        int remove_both_front = b + 1;
+        int remove_both_back = n - a;
+        int remove_one_each = (a + 1) + (n - b);
+        
+        return std::min({remove_both_front, remove_both_back, remove_one_each});
+    }
+};
