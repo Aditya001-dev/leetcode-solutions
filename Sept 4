@@ -1,0 +1,33 @@
+#include <vector>
+#include <algorithm>
+
+class Solution {
+public:
+    int firstStableIndex(std::vector<int>& nums, int k) {
+        int n = nums.size();
+        
+        // Step 1: Compute prefix maximums
+        std::vector<int> pref_max(n);
+        pref_max[0] = nums[0];
+        for (int i = 1; i < n; ++i) {
+            pref_max[i] = std::max(pref_max[i - 1], nums[i]);
+        }
+        
+        // Step 2: Compute suffix minimums
+        std::vector<int> suff_min(n);
+        suff_min[n - 1] = nums[n - 1];
+        for (int i = n - 2; i >= 0; --i) {
+            suff_min[i] = std::min(suff_min[i + 1], nums[i]);
+        }
+        
+        // Step 3: Find the smallest index satisfying the condition
+        for (int i = 0; i < n; ++i) {
+            long long instability_score = (long long)pref_max[i] - suff_min[i];
+            if (instability_score <= k) {
+                return i;
+            }
+        }
+        
+        return -1;
+    }
+};
