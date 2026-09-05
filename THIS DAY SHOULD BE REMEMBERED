@@ -1,0 +1,29 @@
+#include <vector>
+#include <algorithm>
+
+class Solution {
+public:
+    int firstStableIndex(std::vector<int>& nums, int k) {
+        int n = nums.size();
+        
+        // Compute suffix minimums
+        std::vector<int> suffix_min(n);
+        suffix_min[n - 1] = nums[n - 1];
+        for (int i = n - 2; i >= 0; --i) {
+            suffix_min[i] = std::min(nums[i], suffix_min[i + 1]);
+        }
+        
+        // Find the first index where prefix_max - suffix_min <= k
+        int current_prefix_max = nums[0];
+        for (int i = 0; i < n; ++i) {
+            current_prefix_max = std::max(current_prefix_max, nums[i]);
+            
+            // Cast to long long to safely prevent potential overflow during subtraction
+            if ((long long)current_prefix_max - suffix_min[i] <= k) {
+                return i;
+            }
+        }
+        
+        return -1;
+    }
+};
